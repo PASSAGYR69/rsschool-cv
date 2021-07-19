@@ -1,18 +1,18 @@
-1.**Yury Ruzanau**, 27.
+1. **Yury Ruzanau**, 27.
 
-2.[E-mail](mailto:ruzanoff2009@yandex.by)
+2. [E-mail](mailto:ruzanoff2009@yandex.by)
 
-3.I think that working in programming and computer science is the highest degree
+3. I think that working in programming and computer science is the highest degree
  of development and a **truly smart and beautiful job** at the present time. I'm
  fast learner and really like to do it.
  
-4.Besides practice at the rs-school I was learning the 
+4. Besides practice at the rs-school I was learning the 
 [tutorial learn.javascript](https://learn.javascript.ru/) and completed  about 
 60 percent of it. I had a practice on Codewars too.
 
-5.Result on Codewars: 6 kyu, 144 points. [My codewars profile](https://www.codewars.com/users/PASSAGYR69)
+5. Result on Codewars: 6 kyu, 144 points. [My codewars profile.](https://www.codewars.com/users/PASSAGYR69)
 
-6.**My code (JS):**
+6. **My code (JS):**
 
 ```
 // "Primes in numbers" task from Codewars. Example: n = 86240 should return "(2**5)(5)(7**2)(11)"
@@ -48,7 +48,7 @@ function primeFactors(n) {
 }
 ```
 
-7.English-level A2.
+7. English-level A2.
 
 
 
