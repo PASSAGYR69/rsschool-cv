@@ -1,4 +1,4 @@
-1. **Yury Ruzanau**, 27.
+1. **Yury Ruzanau**, 27 y.o..
 
 2. [E-mail](mailto:ruzanoff2009@yandex.by)
 
