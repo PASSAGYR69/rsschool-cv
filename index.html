@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Yury Ruzanau</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <div class='cols' style="padding: 40px 0 0 40px;">
+    <img src="ava.jpg" alt="avatar" width="300">
+
+    <aside>
+    <div id="contacts">
+    <h2 style="text-align: center;">C O N T A C T</h2>
+
+    <p>
+      <ul>
+       <li><a href="mailto:ruzanoff2009@yandex.by">ruzanoff2009@yandex.by</a> </li> <br>
+       <li> Phone number: 80232 49-15-13 </li><br>
+       <li> Homel, Belarus</li>
+      </ul>
+    </p>
+    </div>
+    </div>
+  </aside>
+
+    <div class='cols'>
+    <header><h1>
+        Yury Ruzanau
+    </h1></header><br>
+<main>
+  <section>
+<h2>ABOUT ME</h2>
+<p>27 y.o. I think that working in programming and computer science is the highest degree
+    of development and a <b>truly smart and beautiful job</b> at the present time. I'm
+    fast learner and really like to do it. <br> English-level A2.</p> <br>
+  </section>
+  <section>
+    <h2>EXPIRIENCE</h2>
+<p>Besides practice at the rs-school I was learning the 
+  <a href="https://laern.javascript.ru/">learn.javascript</a> and completed  about 
+    60 percent of it. I had a practice on Codewars too.
+    Result on Codewars: 6 kyu, 144 points. <a href="https://www.codewars.com/users/PASSAGYR69">My codewars profile.</a>
+    </p>
+  </section>
+  <br>
+  <section>
+  <h2> MY CODE (JS)</h2> 
+
+  <p>
+  My solution for <a href="https://www.codewars.com/kata/54d512e62a5e54c96200019e">"Primes in numbers"</a> - Codewars task. 
+  </p>
+<pre><code>
+//Example: n = 86240 should return "(2**5)(5)(7**2)(11)"
+
+function primeFactors(n) { 
+  let arr = []
+  let finalStr = ''
+
+  prime:
+  for (i = 2; i &lt; Math.sqrt(n); i++ ) {
+    for (j = 2; j &lt; i; j++) {
+      if (i % j == 0) continue prime;
+    }
+    while(true) {
+      if (n % i == 0) {n = n / i; arr.push (i)}
+      if (n % i != 0) {break}
+    }
+  }
+  if(n > 1) arr.push(n);
+  let step = 1;
+
+  for (i = 0; i &lt; arr.length; i++) {
+    if (arr[i] == arr [i+1]) {
+      step += 1
+    }
+    if (arr[i] != arr [i+1]) {
+      step == 1 ?  finalStr += '(' + arr[i]  + ')' :
+       finalStr += '(' + arr[i] +'**' + step + ')' ;
+      step = 1;
+    }
+  }
+
+  return (finalStr)
+}
+</code></pre> 
+</section>
+
+</div>
+</main>
+<footer style="font-size: 14px; text-align: center;">
+
+ <a href="https://github.com/PASSAGYR69">My GitHub</a> <br><br>
+ 
+ <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs_logo" width="100"> </a>  <br><br>
+
+  2021
+</footer>
+  </body>
+</html>

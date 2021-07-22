@@ -7,7 +7,7 @@
  fast learner and really like to do it.
  
 4. Besides practice at the rs-school I was learning the 
-[tutorial learn.javascript](https://learn.javascript.ru/) and completed  about 
+[tutorial learn.javascript](https://laern.javascript.ru/) and completed  about 
 60 percent of it. I had a practice on Codewars too.
 
 5. Result on Codewars: 6 kyu, 144 points. [My codewars profile.](https://www.codewars.com/users/PASSAGYR69)
