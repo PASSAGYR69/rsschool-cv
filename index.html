@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Yury Ruzanau</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <nav>
+      <div class="navigation"> 
+        <ul class="ul-nav">
+          <li class="anchor"><a href="#about-me" class="anchor"><div>About me</div></a></li>
+          <li class="anchor"><a href="#expirience" class="anchor"><div>Expirience</div></a></li>
+          <li class="anchor"><a href="#my-code" class="anchor"><div>My code</div></a></li>
+          <li class="anchor"><a href="#my-projects" class="anchor"><div>My projects</div></a></li>
+        </ul>
+
+
+      </div>
+
+    </nav>
+
+    <div class="container">
+      
+      <div class='cols' style="padding: 40px 0 0 40px;">
+        <img src="assets/ava.jpg" alt="avatar" height="300" width="300">
+
+        <aside>
+          <div id="contacts">
+            <h2 style="text-align: center;">C O N T A C T</h2>
+            <ul class="ul-contacts">
+              <li><a href="mailto:ruzanoff2009@yandex.by">ruzanoff2009@yandex.by</a> </li> 
+              <li> +375232491513 </li>
+              <li> Homel, Belarus</li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h2>SKILLS</h2> 
+              <ul>
+            <li> HTML 3/10 </li>
+            <li>CSS  3/10</li>
+            <li>JavaScript 3/10</li>
+            <li>Git 2/10</li>
+            <li>Figma 2/10</li>
+          </ul>
+          </div>
+        </aside>
+      </div>
+    
+
+      <div class='cols'>
+        <header><h1><span class="h1-part">I'm frontend developer,</span> <br>Yury Ruzanau</h1></header>
+          <main>
+            <section>
+              <h2 id="about-me">ABOUT ME</h2>
+              <p>27 y.o. I think that working in programming and computer science is the highest degree
+                  of development and a <b>truly smart and beautiful job</b> at the present time. I'm
+                  fast learner and really like to do it. <br> <b> English-level A2.</b></p> 
+            </section>
+            <section>
+              <h2 id="expirience">EXPIRIENCE</h2>
+              <p>I have finished RS School JS/FE courses (Stage 0) with score 220 points.
+                Besides practice at the rs-school I am studying the 
+              <a href="https://learn.javascript.ru/">learn.javascript</a> and completed  about 
+              40 percent of it. I had a practice on Codewars too.
+              Result on Codewars: 6 kyu, 177 points. <a href="https://www.codewars.com/users/PASSAGYR69">My codewars profile.</a>
+              </p>
+            </section>
+            
+            <section>
+              <h2 id="my-code"> MY CODE (JS)</h2> 
+
+              <p style="margin-bottom: 5px;">
+                My solution for <a href="https://www.codewars.com/kata/54d512e62a5e54c96200019e">"Primes in numbers"</a> - Codewars task. 
+              </p>
+
+              <button class="button-solution" onclick="showCode()">Code</button>
+
+              <pre class="my-code"><code >
+//Example: n = 86240 should return "(2**5)(5)(7**2)(11)"
+
+function primeFactors(n) { 
+  let arr = []
+  let finalStr = ''
+
+  prime:
+  for (i = 2; i &lt; Math.sqrt(n); i++ ) {
+    for (j = 2; j &lt; i; j++) {
+      if (i % j == 0) continue prime;
+    }
+    while(true) {
+      if (n % i == 0) {n = n / i; arr.push (i)}
+      if (n % i != 0) {break}
+    }
+  }
+  if(n > 1) arr.push(n);
+  let step = 1;
+
+  for (i = 0; i &lt; arr.length; i++) {
+    if (arr[i] == arr [i+1]) {
+      step += 1
+    }
+    if (arr[i] != arr [i+1]) {
+      step == 1 ?  finalStr += '(' + arr[i]  + ')' :
+      finalStr += '(' + arr[i] +'**' + step + ')' ;
+      step = 1;
+    }
+  }
+
+  return (finalStr)
+}                           
+              </code></pre> 
+            </section> <br> <br>
+            <h2 id="my-projects">MY PROJECTS</h2>
+            <section class="projects">
+              
+              <div class="projects">
+                <a href="https://passagyr69.github.io/jsClock/"><div class="cl">
+                  <img src="assets/clock.png" alt="clock" class="clock" height="150" width="150">
+                </div></a>
+              </div>
+
+              <div class="projects">
+                <a href="https://passagyr69.github.io/whack-a-mole/">
+                  <div class="mo" ><img src="assets/whack-a-mole.png" alt="whack-a-mole" class="mole" height="150" width="150"></div>
+                </a>
+              </div>
+            </section>
+          </main>
+      </div>
+    </div>
+    <footer style="font-size: 14px; text-align: center;">
+
+    <a href="https://github.com/PASSAGYR69">My GitHub</a> <br><br>
+    
+    <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs_logo" width="100"> </a>  <br><br>
+
+      2021
+    </footer>
+<script>
+
+let myCode = document.querySelector(".my-code")
+let codeIsOpen = false; 
+
+function showCode() {
+  if(codeIsOpen == false) {
+    myCode.style.display = 'block';
+    codeIsOpen = true;
+  }
+  else {
+    myCode.style.display = 'none';
+    codeIsOpen = false;
+  }
+}
+
+</script>
+  </body>
+</html>
