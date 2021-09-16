@@ -1,1 +1,1 @@
-https://PASSAGYR69.github.io/rsschool-cv/
+https://passagyr69.github.io/rsschool-cv/
